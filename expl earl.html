@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="background.css">
+    <style>
+        span{
+            font-size: 18px;
+        }
+        body{
+            /* background-image: url(1.jpg);       */
+            background-color: rgb(248, 217, 171);
+        }
+        h1{
+            margin-top: 25px;
+            margin-bottom: 0px;
+            text-align: center;
+            color: crimson;
+        }
+        .logout{
+            margin-left: 1300px;
+        }
+        .marq{
+            margin-top  : 5px;
+            height: 5px;
+            padding: 8px;
+            padding-bottom: 18px;
+        }        
+        .navigate{
+            margin: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            background-color: rgb(253, 199, 21);
+            height: 33px;
+        }
+        .navigate ul{
+            display: inline-flex;
+            margin: 0px;
+            
+        }
+        .navigate ul li{
+            margin-top: -16px;
+            padding: 20px;
+        }
+        nav ul{
+            list-style: none;
+        }   
+        nav li a{
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* color:rgb(230, 7, 141) */
+        }
+        a:hover{
+            color: rgb(14, 20, 20);
+        }
+        .search{
+            margin-top: 2px;
+            margin-left: 580px;
+            margin-right: -595px;
+        }
+        #search{
+            margin-top: 2px;
+            margin-left: 1px;
+        }
+        .content{
+            border: 3px solid rgb(165, 218, 22);
+            height: 362px;
+            position:relative;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        footer{
+            background-color: #fcddae;
+            margin-left: 1162px;
+            margin-right: 10px;
+        }
+
+        .a1{
+            display: flex;
+
+            margin-top: 30px;            
+            margin-left: 50px;
+        }
+        #a11{
+            color: black;
+            text-decoration: none;
+        }
+        .pop{
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: rgb(245, 220, 139);
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            /* transform: translate(50%, 150%); */
+            visibility: hidden;
+        }
+        /* #click{
+          
+        } */
+        #click :checked ~ .pop{
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="pop">
+        Enter Your PIN to view Document <br><br> 
+        <input type="password" name="PIN" id="pin" placeholder="Enter PIN no."> <br> <br>
+        <button value="Submit">Submit</button>
+    </div>
+    <h1>Paperless Administration</h1>
+    <p class="logout">Logout</p>
+    <marquee class="marq" direction="left" style="background-color: rgb(224, 141, 82);">Welcome Mr/Mrs. Acharya Abhishek Manishkumar</marquee>
+    <nav class="navigate">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about website.html" target="_blank">About website</a></li>
+            <li><a href="" class="service1">services</a></li>
+            <li><a href="contact us.html" target="_blank">contact us</a></li>
+            <li class="search">Search :</li>
+            <div class="search">
+            <input type="text" name="search" id="search" placeholder="Discover here">
+            </div>
+        </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="a1">
+            <b>
+        Here is List of your Documents :
+                </b>
+        <table border="1">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Updated Date</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td><a href="C:\Users\Lenovo\Desktop\IDP-UDP\canvas\ideation canvas.jpg"><input type="checkbox" id="click">December 2020 </button></a></td>
+                <td>15/12/2020</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><a href="C:\Users\Lenovo\Desktop\IDP-UDP\canvas\Empathy summary canvas.jpg">January 2021</a></td>
+                <td>15/01/2021</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><a href="C:\Users\Lenovo\Desktop\IDP-UDP\canvas\Product development canvas.jpg">February 2021</a></td>
+                <td>11/02/2021</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    </html>
+    <footer>
+        Paperless Administration <br>
+        All rights reserved <span>&#169</span>
+   </footer>
+    </body>

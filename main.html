@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="background.css">
+    <style>
+        span {
+            font-size: 18px;
+        }
+        
+        body {
+            background-color: rgb(248, 217, 171);
+        }
+        
+        h1 {
+            margin-top: 25px;
+            margin-bottom: -10px;
+            text-align: center;
+            color: crimson;
+        }
+        
+        .logout {
+            margin-left: 1300px;
+        }
+        
+        .marq {
+            margin-top: 5px;
+            height: 5px;
+            padding: 8px;
+            padding-bottom: 18px;
+        }
+        
+        .navigate {
+            margin: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            background-color: rgb(253, 199, 21);
+            height: 33px;
+        }
+        
+        .navigate ul {
+            display: inline-flex;
+            margin: 0px;
+        }
+        
+        .navigate ul li {
+            margin-top: -16px;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav li a {
+            text-decoration: none;
+        }
+        
+        a {
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(230, 7, 141)
+        }
+        
+        a:hover {
+            color: rgb(14, 20, 20);
+        }
+        
+        .search {
+            margin-top: 2px;
+            margin-left: 580px;
+            margin-right: -595px;
+        }
+        
+        #search {
+            margin-top: 2px;
+            margin-left: 1px;
+        }
+        
+        .content {
+            border: 3px solid rgb(165, 218, 22);
+            height: 362px;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        
+        #b1 {
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            height: 75px;
+            width: 155px;
+            font-size: 19px;
+            margin-left: 220px;
+            margin-top: 62px;
+        }
+        
+        #b1:hover {
+            height: 80px;
+            width: 165px;
+            font-size: 22px;
+            transition: ease-out;
+            background-color: rgb(179, 128, 62);
+            transition-duration: 0.4s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b2 {
+            top: 55px;
+            left: 610px;
+            font-size: 18px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            font-size: 19px;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b2:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 20px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b3 {
+            top: 48px;
+            left: 970px;
+            font-size: 19px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b3:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 21px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b4 {
+            top: 200px;
+            left: 420px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            font-size: 19px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b4:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 20px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b5 {
+            top: 200px;
+            left: 800px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+            font-size: 19px;
+        }
+        
+        #b5:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 22px;
+            transition-duration: 0.4s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #fcddae;
+            margin-left: 1162px;
+            margin-right: 10px;
+        }
+        
+        .a11 {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .heading {
+            display: flex;
+            margin-left: 400px;
+            margin-bottom: 0px;
+        }
+        
+        #imgs {
+            height: 105px;
+            width: 120px;
+        }
+        
+        h1 {
+            margin-top: 22px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            color: crimson;
+            font-size: 39px;
+        }
+        
+        .logout {
+            margin-left: 320px;
+            margin-top: 70px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        #logout1 {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="heading">
+        <img id="imgs" src="C:\Users\Lenovo\Desktop\IDP-UDP\images\z1.png">
+        <h1>Paperless Administration</h1>
+        <p class="logout"><a id="logout1" href="login.html">Logout</a></p>
+    </div>
+    <marquee class="marq" direction="left" style="background-color: rgb(224, 141, 82);">Welcome Mr. Acharya Abhishek Manishkumar</marquee>
+    <nav class="navigate">
+        <ul>
+            <li><a href="home_NOTE.html">Home</a></li>
+            <li><a href="about website.html" target="_blank">About website</a></li>
+            <li><a href="" class="service1">services</a></li>
+            <li><a href="contact us.html" target="_blank">contact us</a></li>
+            <li class="search">Search :</li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Discover here">
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="block" id="b1"><a class="a11" href="add new_note.html">Add new file</a></div>
+        <a class="a11" href="explore earlier.html">
+            <div class="block" id="b2">Explore Earlier</div>
+        </a>
+        <a class="a11" href="near to upload.html">
+            <acronym title="To set reminder ...click here">  <div class="block" id="b3">Near to upload</div></acronym>
+        </a><br>
+        <a class="a11" href="manage profile.html">
+            <acronym title="View/Edit your Profile">
+            <div class="block1" id="b4">Manage Profile</div></acronym>
+        </a>
+        <a class="a11" href="share.html">
+            <div class="block1" id="b5">Share</div>
+        </a>
+    </div>
+
+    <!-- <select>
+        <optgroup>
+            <option>Services</option>
+            <option>Add a file</option>
+            <option>Explore Earlier</option>
+            <option>Near to upload</option>
+        </optgroup>
+    </select> -->
+    <footer>
+
+        Paperless Administration <br> All rights reserved <span>&#169</span>
+    </footer>
+</body>
+
+</html>

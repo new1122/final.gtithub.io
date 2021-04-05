@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <script src="login.js"></script> -->
+    <script>
+        function check(form) /*function to check userid & password*/ {
+            /*the following code checkes whether the entered userid and password are matching*/
+            if (form.userid.value == "Abhishek" && form.pswrd.value == "Abhishek123") {
+                window.open('main.html') /*opens the target page while Id & password matches*/
+            } else {
+                alert("Password or User id is Incorrect!!  Please try again!") /*displays error message*/
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: rgb(248, 217, 171);
+        }
+        
+        .container {
+            /* border: 2px solid rgb(165, 218, 22); */
+            border: 12px solid rgb(224, 141, 82);
+            justify-self: center;
+            text-align: center;
+            width: 40%;
+            margin: auto;
+            border-radius: 30px;
+            margin-top: 20px;
+            padding-bottom: 39px;
+            /* padding-left: 39px; */
+            /* padding-right: 39px; */
+        }
+        
+        span {
+            font-size: 25px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        p {
+            font-size: 25px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: crimson;
+            margin-bottom: 1px;
+        }
+        
+        .btn {
+            border-radius: 8px;
+            background-color: black;
+            color: blanchedalmond;
+            width: 99px;
+            height: 30px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            color: rgb(236, 10, 10);
+        }
+        
+        .btn1:hover {
+            color: rgb(236, 10, 10);
+        }
+        /*         
+        #line {
+            background-color: rgb(223, 85, 85);
+        } */
+        
+        #register {
+            margin-left: 803px;
+            margin-top: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .imgs {
+            display: flex;
+            margin-left: 70px;
+        }
+        
+        #imgs1 {
+            margin-left: 70px;
+            height: 40px;
+            width: 60px;
+        }
+        
+        #imgs2 {
+            margin-left: 30px;
+            height: 40px;
+            width: 60px;
+        }
+        
+        #imgs3 {
+            margin-left: 30px;
+            height: 40px;
+            width: 60px;
+        }
+        
+        .heading {
+            display: flex;
+            margin-left: 350px;
+            margin-bottom: 0px;
+        }
+        
+        #imgs {
+            height: 105px;
+            width: 120px;
+            margin-top: 0px;
+        }
+        
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            color: crimson;
+            font-size: 39px;
+        }
+        
+        table {
+            font-size: 19 px;
+        }
+        
+        .main {
+            background-color: rgb(223, 85, 85);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .btn1{
+            padding-top: 4px;
+            position: fixed;
+            top: 384px;
+            left: 760px;
+            border-radius: 8px;
+            background-color: black;
+            color: blanchedalmond;
+            width: 99px;
+            height: 30px;
+            cursor: pointer;
+        }
+        #notregi {
+            position: relative;
+            margin-left: 335px;
+            top: 30px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <img id="imgs" src="C:\Users\Home\Desktop\IDP-UDP\images\z1.png">
+        <h1>Paperless Administration</h1>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div id="line">Login</div>
+        </div>
+        <form name="login">
+            <table align="center">
+                <tr>
+                    <td>
+                        Username :<input type="text" name="userid" placeholder="Enter User id " required/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <br> Password :<input type="password" placeholder="Enter Password" name="pswrd" required/></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><a href="forgot.html"> Forgot Password?</a></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btn" onclick="check(this.form)" value="Login" />
+                       <div class="btn1"><a href="home_NOTE.html" class="btn1">Cancel</a></div></td>
+                </tr><br>
+            </table>
+        </form>
+        <br> ----------------OR----------------
+        <br>
+        <br>
+        <div class="imgs">
+            <div class="img1">
+                <a href="https://accounts.google.com"><img id="imgs1" src="C:\Users\Home\Desktop\IDP-UDP\images\google.png"></a>
+            </div>
+            <div class="img2">
+                <a href="https://www.facebook.com/"> <img id="imgs2" src="C:\Users\Home\Desktop\IDP-UDP\images\fb.png"></a>
+            </div>
+            <div class="img3">
+                <a href="https://www.twitter.com"> <img id="imgs3" src="C:\Users\Home\Desktop\IDP-UDP\images\twitter.png"></a>
+            </div>
+        </div>
+
+        <a id="notregi" href="registration.html" target="_blank">Not Registered? Register Here</a>
+    </div>
+
+</body>
+
+</html>

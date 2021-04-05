@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="background.css">
+    <style>
+        span {
+            font-size: 18px;
+        }
+        
+        body {
+            /* background-image: url(1.jpg);       */
+            background-color: rgb(248, 217, 171);
+        }
+        
+        h1 {
+            margin-top: 25px;
+            margin-bottom: 0px;
+            text-align: center;
+            color: crimson;
+        }
+        
+        .logout {
+            margin-left: 1300px;
+        }
+        
+        .marq {
+            margin-top: 5px;
+            height: 5px;
+            padding: 8px;
+            padding-bottom: 18px;
+        }
+        
+        .navigate {
+            margin: 0px;
+            margin-top: 10px;
+            padding: 0px;
+            background-color: rgb(253, 199, 21);
+            height: 33px;
+        }
+        
+        .navigate ul {
+            display: inline-flex;
+            margin: 0px;
+        }
+        
+        .navigate ul li {
+            margin-top: -16px;
+            padding: 20px;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav li a {
+            text-decoration: none;
+        }
+        
+        a {
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(230, 7, 141)
+        }
+        
+        a:hover {
+            color: rgb(14, 20, 20);
+        }
+        /*         
+            #btn {
+                width: 100px;
+            }
+            */
+        
+        .search {
+            margin-top: 2px;
+            margin-left: 580px;
+            margin-right: -595px;
+        }
+        
+        #search {
+            margin-top: 2px;
+            margin-left: 1px;
+        }
+        
+        .content {
+            border: 3px solid rgb(165, 218, 22);
+            height: 362px;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        /* .block{
+            border: 2px solid red;
+            border-radius: 50px;
+            padding: 60px;
+            margin: 50px;
+            margin-top: 80px;
+            display: inline;
+        }
+        .block1{
+            border: 2px solid red;
+            border-radius: 50px;
+            margin: 150px;
+            margin-top: 100px;
+            padding: 60px;
+            border: 2px solid red;
+            display: inline-block;
+        } */
+        
+        #b1 {
+            top: 40px;
+            left: 240px;
+            justify-content: center;
+            /* align-self: center; */
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            position: relative;
+            height: 75px;
+            width: 155px;
+            font-size: 19px;
+        }
+        
+        #b1:hover {
+            height: 80px;
+            width: 165px;
+            font-size: 22px;
+            transition: ease-out;
+            background-color: rgb(179, 128, 62);
+            transition-duration: 0.4s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b2 {
+            top: 55px;
+            left: 610px;
+            font-size: 18px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            font-size: 19px;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b2:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 20px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b3 {
+            top: 48px;
+            left: 970px;
+            font-size: 19px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b3:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 21px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b4 {
+            top: 200px;
+            left: 420px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            font-size: 19px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+        }
+        
+        #b4:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 20px;
+            transition-duration: 0.7s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        #b5 {
+            top: 200px;
+            left: 800px;
+            justify-items: center;
+            text-align: center;
+            padding-top: 49px;
+            background-color: burlywood;
+            border: 2px solid black;
+            border-radius: 30px;
+            position: absolute;
+            height: 75px;
+            width: 155px;
+            font-size: 19px;
+        }
+        
+        #b5:hover {
+            background-color: rgb(179, 128, 62);
+            height: 80px;
+            width: 165px;
+            font-size: 22px;
+            transition-duration: 0.4s;
+            justify-self: center;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #fcddae;
+            margin-left: 1162px;
+            margin-right: 10px;
+        }
+        /* select{
+            position: fixed;
+            top: 175px;
+            left: 280px;
+            background-color: yellow;
+        } */
+        
+        #a11 {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .heading {
+            display: flex;
+            margin-left: 350px;
+            margin-bottom: 0px;
+        }
+        
+        #imgs {
+            height: 105px;
+            width: 120px;
+            margin-top: 0px;
+        }
+        
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+            color: crimson;
+            font-size: 39px;
+        }
+        
+        .logout {
+            margin-left: 380px;
+            margin-top: 70px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        #logout1 {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        
+        .content {
+            text-align: center;
+        }
+        
+        .a22 {
+            font-size: 16px;
+        }
+        /*         
+        table {
+            margin-left: -100px;
+            padding: 15px;
+        } */
+        
+        body>table {
+            width: 80%;
+        }
+        
+        table {
+            margin-left: 100px;
+            border-collapse: collapse;
+        }
+        
+        table.list {
+            width: 100%;
+            margin-left: 30px;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even),
+        table.list thead>tr {
+            background-color: #dddddd;
+        }
+        
+        input[type=text],
+        input[type=number] {
+            width: 100%;
+            padding: 12px 20px;
+            height: 38px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid rgb(68, 68, 68);
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 200px;
+            height: 25px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 25px;
+            padding-top: 12px;
+            font-size: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        #btn:hover {
+            color: rgb(255, 0, 0);
+            font-style: bold;
+        }
+        
+        form div.form-action-buttons {
+            text-align: right;
+        }
+        
+        a {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #0000ee;
+            margin-right: 4px;
+        }
+        
+        label.validation-error {
+            color: red;
+            margin-left: 5px;
+        }
+        
+        #bar {
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(230, 7, 141)
+        }
+        
+        #search1 {
+            height: 20px;
+            width: 170px;
+            margin-top: 1px;
+        }
+        
+        .hide {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <img id="imgs" src="C:\Users\Lenovo\Desktop\IDP-UDP\images\z1.png">
+        <h1>Paperless Administration</h1>
+        <p class="logout"><a id="logout1" href="login.html">Logout</a></p>
+    </div>
+    <marquee class="marq" direction="left" style="background-color: rgb(224, 141, 82);">Welcome Mr. Acharya Abhishek Manishkumar</marquee>
+    <nav class="navigate">
+        <ul>
+            <li><a id="bar" href="main.html">Home</a></li>
+            <li><a id="bar" href="about website.html" target="_blank">About website</a></li>
+            <li><a id="bar" href="" class="service1">services</a></li>
+            <li><a id="bar" href="contact us.html" target="_blank">contact us</a></li>
+            <li class="search">Search :</li>
+            <div class="search">
+                <input type="text" name="search" id="search1" placeholder="Discover here">
+            </div>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Name of File*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Enter file name" style="background-color:rgb(224, 141, 82);">
+                        </div>
+                        <div>
+                            <label>Date of Latest upload*</label><br>
+                            <input type="date" style="height: 30px; width: 400px; border-radius: 10px; border-color:wheat; background-color:rgb(224, 141, 82);" name="empCode" id="empCode"><br><br>
+                        </div>
+                        <div>
+                            <label>Date of Next upload*</label><br>
+                            <input type="date" name="salary" id="salary" style="height: 30px; width: 400px; border-radius: 10px; border-color:wheat; background-color:rgb(224, 141, 82);"><br>
+                        </div>
+                        <div>
+                            <label>Remarks</label>
+                            <input style="background-color:rgb(224, 141, 82);" type="text" name="city" id="city" placeholder="Enter remarks here">
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" id="btn" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Name of Files</th>
+                                <th>Date of Latest upload</th>
+                                <th>Date of Next upload</th>
+                                <th>Remarks</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!--<div class="a22">
+            Here is next to upload  :  -
+        </div>
+        <br>
+        <br>
+		<table border="2" align="center">
+            <tr>
+                <th>Sr.no.</th>
+                <th>Name of Document</th>
+                <th>date</th>
+                <th>Done or not?</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td id="line1">Fee reciept of sem 8th</td>
+                <td>20/02/2021</td>
+                <td><button id="btn" onclick="yesno()">Yes/No</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="line2">Uttrayan Photos</td>
+                <td>11/03/2021</td>
+                <td><button id="btn" onclick="yesno1()">Yes/No</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="line3">PPF a/c Statement</td>
+                <td>02/04/2021</td>
+                <td><button id="btn" onclick="yesno2()">Yes/No</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td id="line4">LIC Premium</td>
+                <td>08/04/2021</td>
+                <td><button id="btn" onclick="yesno3()">Yes/No</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td id="line5">Photos</td>
+                <td>13/05/2021</td>
+                <td><button id="btn" onclick="yesno4()">Yes/No</button></td>
+            </tr>
+        </table>-->
+    </div>
+</body>
+<script>
+    var selectedRow = null
+
+    function onFormSubmit() {
+        if (validate()) {
+            var formData = readFormData();
+            if (selectedRow == null)
+                insertNewRecord(formData);
+            else
+                updateRecord(formData);
+            resetForm();
+        }
+    }
+
+    function readFormData() {
+        var formData = {};
+        formData["fullName"] = document.getElementById("fullName").value;
+        formData["empCode"] = document.getElementById("empCode").value;
+        formData["salary"] = document.getElementById("salary").value;
+        formData["city"] = document.getElementById("city").value;
+        return formData;
+    }
+
+    function insertNewRecord(data) {
+        var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
+        var newRow = table.insertRow(table.length);
+        cell1 = newRow.insertCell(0);
+        cell1.innerHTML = data.fullName;
+        cell2 = newRow.insertCell(1);
+        cell2.innerHTML = data.empCode;
+        cell3 = newRow.insertCell(2);
+        cell3.innerHTML = data.salary;
+        cell4 = newRow.insertCell(3);
+        cell4.innerHTML = data.city;
+        cell4 = newRow.insertCell(4);
+        cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+                       <a onClick="onDelete(this)">Delete</a>`;
+    }
+
+    function resetForm() {
+        document.getElementById("fullName").value = "";
+        document.getElementById("empCode").value = "";
+        document.getElementById("salary").value = "";
+        document.getElementById("city").value = "";
+        selectedRow = null;
+    }
+
+    function onEdit(td) {
+        selectedRow = td.parentElement.parentElement;
+        document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
+        document.getElementById("empCode").value = selectedRow.cells[1].innerHTML;
+        document.getElementById("salary").value = selectedRow.cells[2].innerHTML;
+        document.getElementById("city").value = selectedRow.cells[3].innerHTML;
+    }
+
+    function updateRecord(formData) {
+        selectedRow.cells[0].innerHTML = formData.fullName;
+        selectedRow.cells[1].innerHTML = formData.empCode;
+        selectedRow.cells[2].innerHTML = formData.salary;
+        selectedRow.cells[3].innerHTML = formData.city;
+    }
+
+    function onDelete(td) {
+        if (confirm('Are you sure to delete this record ?')) {
+            row = td.parentElement.parentElement;
+            document.getElementById("employeeList").deleteRow(row.rowIndex);
+            resetForm();
+        }
+    }
+
+    function validate() {
+        isValid = true;
+        if (document.getElementById("fullName").value == "") {
+            isValid = false;
+            document.getElementById("fullNameValidationError").classList.remove("hide");
+        } else {
+            isValid = true;
+            if (!document.getElementById("fullNameValidationError").classList.contains("hide"))
+                document.getElementById("fullNameValidationError").classList.add("hide");
+        }
+        return isValid;
+    }
+    // function yesno(){
+    //     let line = document.getElementById('line1')
+    //     if(line1 != 'none'){
+    //         document.getElementById('line1').innerHTML=('Done');
+    //         //alert('Your next reminder is on 20th Feb 2021');
+    //     }
+    //     else{}
+    // }
+    // function yesno1(){
+    //     let line = document.getElementById('line2')
+    //     if(line2 != 'none'){
+    //         document.getElementById('line2').innerHTML=('Done');
+    //         //alert('Your next reminder is on 20th Feb 2021');
+    //     }
+    //     else{}
+    // }
+    // function yesno2(){
+    //     let line = document.getElementById('line3')
+    //     if(line3 != 'none'){
+    //         document.getElementById('line3').innerHTML=('Done');
+    //         //alert('Your next reminder is on 20th Feb 2021');
+    //     }
+    //     else{}
+    // }
+    // function yesno3(){
+    //     let line = document.getElementById('line4')
+    //     if(line4 != 'none'){
+    //         document.getElementById('line4').innerHTML=('Done');
+    //         //alert('Your next reminder is on 20th Feb 2021');
+    //     }
+    //     else{}
+    // }
+    // function yesno4(){
+    //     let line = document.getElementById('line5')
+    //     if(line5 != 'none'){
+    //         document.getElementById('line5').innerHTML=('Done');
+    //         //alert('Your next reminder is on 20th Feb 2021');
+    //     }
+    //     else{}
+    // }
+</script>
+
+</html>
